@@ -1,15 +1,9 @@
-# Trabajo Práctico - Uso de .gitignore
+¿Para qué sirve el archivo .gitignore?
+El archivo .gitignore sirve para indicarle a Git qué archivos o carpetas no debe seguir ni incluir dentro del repositorio. Es decir, le dice a Git qué cosas debe “ignorar”.
+Esto es útil porque en un proyecto hay muchos archivos que no son necesarios guardar en el repositorio, como archivos temporales, de prueba o generados automáticamente. Gracias al .gitignore, esos archivos no aparecen en git status ni se suben a GitHub.
 
-## Comprobación
+¿Qué tipo de archivos es conveniente ignorar?
+Es conveniente ignorar todos los archivos que no son importantes para el funcionamiento del proyecto o que se generan automáticamente. Algunos ejemplos son: Archivos de log que solo guardan información de errores o procesos, archivos temporales o de prueba, carpetas de dependencias, archivos de configuración personal del usuario y archivos generados por programas o compilaciones.  Ignorar estos archivos ayuda a mantener el repositorio más limpio, organizado y liviano.
 
-Primero cree el archivo error.log antes de utilizar .gitignore.
-
-Al ejecutar el comando `git status`, el archivo aparecía como no rastreado.
-
-Luego se creó el archivo .gitignore con la regla:
-
-*.log
-
-Después de esto, al ejecutar otra vez `git status`, el archivo error.log dejó de aparecer, lo que muestra que está siendo ignorado correctamente por Git.
-
-También se verificó creando un archivo llamado nuevo.log, el cual tampoco aparece en git status.
+¿Un archivo ignorado se sube a GitHub?
+No, un archivo ignorado no se sube a GitHub. Esto pasa porque Git no lo rastrea, es decir, no lo tiene en cuenta al momento de hacer un commit. Por lo tanto, al subir el repositorio a GitHub, esos archivos no se incluyen.
