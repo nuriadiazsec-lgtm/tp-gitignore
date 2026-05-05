@@ -2,7 +2,7 @@
 
 ## Comprobación
 
-Se creó el archivo error.log antes de utilizar .gitignore.
+Primero cree el archivo error.log antes de utilizar .gitignore.
 
 Al ejecutar el comando `git status`, el archivo aparecía como no rastreado.
 
